@@ -1,7 +1,9 @@
-//your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 30;
-
+var browraise = 83//83
+var eyesize = 10//10
+var mouth_open = 104//104
+var blush = 50//80,, not above 120
+var skinny = 140//140,, no less than 100
+var pupils = 90
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -20,13 +22,8 @@ function wallpaper_background() {
   background(240, 255, 240); //light honeydew green colour
 }
 
+
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
- 
-var browraise = 83//83
-var eyesize = 10//10
-var mouth_open = 104//104
-var blush = 120//80,, not above 120
-var skinny = 140//140,, no less than 100
 
   fill(255, 165, 97)//orange
   stroke(265, 175, 107)//light orange outline
@@ -117,6 +114,9 @@ var skinny = 140//140,, no less than 100
   ellipse(125,90,eyesize,eyesize);//right eye base
 
   fill(0);
-  ellipse(75,90,eyesize-5,eyesize-5);//left pupil
-  ellipse(125,90,eyesize-5,eyesize-5);//right pupil
+  ellipse(75,pupils,eyesize-5,eyesize-5);//left pupil
+  ellipse(125,pupils,eyesize-5,eyesize-5);//right pupil
 }
+clear();
+if (mouseY>100);
+pupils = 100
