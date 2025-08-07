@@ -3,7 +3,6 @@ var eyesize = 10//10
 var mouth_open = 104//104
 var blush = 50//80,, not above 120
 var skinny = 140//140,, no less than 100
-var pupils = 90
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -112,11 +111,16 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   line(128,90,132,85);//right outside
   line(127,90,131,84);//right middle
   ellipse(125,90,eyesize,eyesize);//right eye base
-
-  fill(0);
-  ellipse(75,pupils,eyesize-5,eyesize-5);//left pupil
-  ellipse(125,pupils,eyesize-5,eyesize-5);//right pupil
+fill(0);
+  ellipse(75,90,eyesize-5,eyesize-5);//left pupil
+  ellipse(125,90,eyesize-5,eyesize-5);//right pupil
+if(mouseY>100);{
+stroke(255);
+fill(255);
+ ellipse(75,90,eyesize-5,eyesize-5);//left pupil
+  ellipse(125,90,eyesize-5,eyesize-5);//right pupil
+fill(0);
+  ellipse(75,88,eyesize-5,eyesize-5);//left pupil
+  ellipse(125,88,eyesize-5,eyesize-5);//right pupil
+  }
 }
-clear();
-if (mouseY>100);
-pupils = 100
