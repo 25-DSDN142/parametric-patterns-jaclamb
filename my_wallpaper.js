@@ -1,7 +1,7 @@
 var browraise = 83//83
 var eyesize = 10//10
-var mouth_open = 104//104
-var blush = 50//80,, not above 120
+var mouth_open =104//104
+var blush = 80//80,, not above 120
 var skinny = 140//140,, no less than 100
 
 function setup_wallpaper(pWallpaper) {
@@ -117,10 +117,10 @@ fill(0);
 if(mouseY>100);{
 stroke(255);
 fill(255);
- ellipse(75,90,eyesize-5,eyesize-5);//left pupil
-  ellipse(125,90,eyesize-5,eyesize-5);//right pupil
+ellipse(75,88,eyesize-5,eyesize-5);//left pupil
+ellipse(125,88,eyesize-5,eyesize-5);//right pupil
 fill(0);
-  ellipse(75,88,eyesize-5,eyesize-5);//left pupil
-  ellipse(125,88,eyesize-5,eyesize-5);//right pupil
+  ellipse(75,90,eyesize-5,eyesize-5);//left pupil
+  ellipse(125,90,eyesize-5,eyesize-5);//right pupil
   }
 }
